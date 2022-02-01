@@ -135,7 +135,8 @@ def o4ki():
     plt.xlabel('x')
     plt.grid(True)
     plt.show()
-def konn(): pass
+def konn():
+
 def figura():
     global var
     valik=var.get()
@@ -143,7 +144,7 @@ def figura():
         kala()
     elif valik==2:
         o4ki()
-    else:
+    elif valik==3:
         konn()
 
 aken=Tk()
