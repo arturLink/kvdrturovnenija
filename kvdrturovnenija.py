@@ -136,12 +136,12 @@ def o4ki():
     plt.grid(True)
     plt.show()
 def konn():
-    x1 = np.arange(-7,7,0.5)
+    x1 = np.arange(-7,7,0.1)
     y1 = -(3/49)*x1**2+8
-    x2=np.arange(-7, 7, 0.5)
-    y2= (4/49)*x2*x2+1
-    x3=np.arange(-6.8, -2, 0.5)
-    y3=-(0.75)*(x3+4)**2+11
+    x2=np.arange(-7, 7, 0.1)
+    y2=(4/49)*x2*x2+1
+    x3=np.arange(-6.8, -2, 0.1)
+    y3= -(0.75)*(x3+4)**2+11
     x4=np.arange(2, 6.8, 0.5)
     y4= -(0.75)*(x4-4)**2+11
     x5=np.arange(-5.8, -2.8, 0.5)
@@ -149,26 +149,26 @@ def konn():
     x6=np.arange(2.8, 5.8, 0.5)
     y6= -(x6-4)**2+9
     x7=np.arange(-4, 4, 0.5)
-    y7= (4/9)**2-5
+    y7=(4/9)*x7**2-5
     x8=np.arange(-5.2, 5.2, 0.5)
-    y8= (4/9)**2-9
+    y8=(4/9)*x8**2-9
     x9=np.arange(-7, -2.8)
     y9= -(1/16)*(x9+3)**2-6
     x10=np.arange(2.8, 7)
     y10= -(1/16)*(x10-3)**2-6
     x11=np.arange(-7, 0, 0.5)
-    y11= (1/9)*(x11+4)**2-11
+    y11=(1/9)*(x11+4)**2-11
     x12=np.arange(0, 7, 0.5)
-    y12= (1/9)*(x12-4)**2-11
+    y12=(1/9)*(x12-4)**2-11
     x13=np.arange(-7, -4.5, 0.5)
     y13= -(x13+5)**2
     x14=np.arange(4.5, 7, 0.5)
     y14= -(x14-5)**2
-    x15=np.arange(-3, 3, 0.5)
-    y15= (2/9)**2+2
+    x15=np.arange(-3, 3, 2)
+    y15=(2/9)*x15**2+2
     fig = plt.figure()
     plt.plot(x1,y1,x2,y2,x3,y3,x4,y4,x5,y5,x6,y6,x7,y7,x8,y8,x9,y9,x10,y10,x11,y11,x12,y12,x13,y13,x14,y14,x15,y15)
-    plt.title('Лягушка')
+    plt.title('Лягуха')
     plt.ylabel('y')
     plt.xlabel('x')
     plt.grid(True)
@@ -180,7 +180,7 @@ def figura():
         kala()
     elif valik==2:
         o4ki()
-    elif valik==3:
+    else:
         konn()
 
 aken=Tk()
